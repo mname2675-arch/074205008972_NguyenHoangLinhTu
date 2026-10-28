@@ -47,7 +47,7 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #bd9b52;
+    border: 3px solid #ffffff;
     background: #eee;
     flex-shrink: 0;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .header-info h1 span {
-    color: #bd9b52;
+    color: #fefefd;
 }
 
 .job-title {
@@ -222,75 +222,3 @@ body {
     text-decoration: underline;
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 760px) {
-    body {
-        padding: 10px;
-    }
-
-    .cv {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .header {
-        height: auto;
-        padding: 25px 20px 35px;
-    }
-
-    .header-profile {
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .avatar {
-        width: 85px;
-        height: 85px;
-    }
-
-    .header-info h1 {
-        font-size: 19px;
-    }
-
-    .content {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
-
-    .sidebar {
-        padding: 25px;
-    }
-
-    .main-content {
-        padding: 25px;
-    }
-}
-
-/* PRINT */
-@media print {
-    body {
-        padding: 0;
-        background: white;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-    }
-
-    .cv {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        box-shadow: none;
-    }
-
-    .content {
-        grid-template-columns: 36% 64%;
-    }
-
-    .header-profile {
-        flex-direction: row;
-    }
-
-    a {
-        color: inherit;
-    }
-}
